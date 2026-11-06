@@ -49,6 +49,7 @@
         android:text="Save"
         android:backgroundTint="#000000"
         android:textColor="#FFFFFF"
+        android:elevation="4dp"
         android:layout_marginBottom="32dp"/>
 
     <LinearLayout
@@ -57,9 +58,9 @@
         android:gravity="bottom|center_horizontal"
         android:orientation="horizontal"
         android:padding="8dp">
-        <Button android:id="@+id/navHome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" style="?android:attr/buttonStyleSmall"/>
-        <Button android:id="@+id/navOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" style="?android:attr/buttonStyleSmall" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
-        <Button android:id="@+id/navProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile" style="?android:attr/buttonStyleSmall"/>
+        <Button android:id="@+id/navHome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" android:textSize="12sp" android:backgroundTint="@color/cream_button" android:textColor="#000000" android:elevation="4dp"/>
+        <Button android:id="@+id/navOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" android:textSize="12sp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:backgroundTint="@color/cream_button" android:textColor="#000000" android:elevation="4dp"/>
+        <Button android:id="@+id/navProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile" android:textSize="12sp" android:backgroundTint="@color/cream_button" android:textColor="#000000" android:elevation="4dp"/>
     </LinearLayout>
 
 </LinearLayout>

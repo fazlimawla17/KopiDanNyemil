@@ -37,58 +37,263 @@
             android:orientation="vertical">
 
             <!-- Item 1 -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#F9F9F9" android:padding="12dp" android:layout_marginBottom="8dp">
-                <View android:layout_width="40dp" android:layout_height="40dp" android:background="#DDDDDD" android:layout_marginRight="12dp"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kopi Susu Gula Aren" android:textStyle="bold"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Espresso, susu, gula aren" android:textSize="12sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp 22.000" android:textColor="#E91E63"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#F9F9F9"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coffee" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kopi Susu Gula Aren"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Espresso, susu, gula aren"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 22.000"
+                        android:textColor="#E91E63" />
                 </LinearLayout>
-                <Button android:id="@+id/btnOrder1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btnOrder1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cream_button"
+                    android:elevation="4dp"
+                    android:text="Order"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <!-- Item 2 -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#F9F9F9" android:padding="12dp" android:layout_marginBottom="8dp">
-                <View android:layout_width="40dp" android:layout_height="40dp" android:background="#DDDDDD" android:layout_marginRight="12dp"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Donut Cokelat" android:textStyle="bold"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Donut empuk, glaze cokelat" android:textSize="12sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp 12.000" android:textColor="#E91E63"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#F9F9F9"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/donut" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Donut Cokelat"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Donut empuk, glaze cokelat"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 12.000"
+                        android:textColor="#E91E63" />
                 </LinearLayout>
-                <Button android:id="@+id/btnOrder2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btnOrder2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cream_button"
+                    android:elevation="4dp"
+                    android:text="Order"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <!-- Item 3 -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#F9F9F9" android:padding="12dp" android:layout_marginBottom="8dp">
-                <View android:layout_width="40dp" android:layout_height="40dp" android:background="#DDDDDD" android:layout_marginRight="12dp"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sourdough Loaf" android:textStyle="bold"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roti fermentasi alami" android:textSize="12sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp 35.000" android:textColor="#E91E63"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#F9F9F9"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sourdough" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sourdough Loaf"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roti fermentasi alami"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 35.000"
+                        android:textColor="#E91E63" />
                 </LinearLayout>
-                <Button android:id="@+id/btnOrder3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btnOrder3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cream_button"
+                    android:elevation="4dp"
+                    android:text="Order"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <!-- Item 4 -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#F9F9F9" android:padding="12dp" android:layout_marginBottom="8dp">
-                <View android:layout_width="40dp" android:layout_height="40dp" android:background="#DDDDDD" android:layout_marginRight="12dp"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cappuccino" android:textStyle="bold"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Espresso, foam susu lembut" android:textSize="12sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp 23.000" android:textColor="#E91E63"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#F9F9F9"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coffee_2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cappuccino"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Espresso, foam susu lembut"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 23.000"
+                        android:textColor="#E91E63" />
                 </LinearLayout>
-                <Button android:id="@+id/btnOrder4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btnOrder4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cream_button"
+                    android:elevation="4dp"
+                    android:text="Order"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <!-- Item 5 -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="#F9F9F9" android:padding="12dp" android:layout_marginBottom="8dp">
-                <View android:layout_width="40dp" android:layout_height="40dp" android:background="#DDDDDD" android:layout_marginRight="12dp"/>
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Matcha Latte" android:textStyle="bold"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Matcha Jepang, susu segar" android:textSize="12sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp 27.000" android:textColor="#E91E63"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#F9F9F9"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/matcha" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matcha Latte"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matcha Jepang, susu segar"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 27.000"
+                        android:textColor="#E91E63" />
                 </LinearLayout>
-                <Button android:id="@+id/btnOrder5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/btnOrder5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cream_button"
+                    android:elevation="4dp"
+                    android:text="Order"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -103,9 +308,9 @@
         android:padding="8dp"
         android:background="#EEEEEE">
 
-        <Button android:id="@+id/navHome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" style="?android:attr/buttonStyleSmall"/>
-        <Button android:id="@+id/navOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" style="?android:attr/buttonStyleSmall" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
-        <Button android:id="@+id/navProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile" style="?android:attr/buttonStyleSmall"/>
+        <Button android:id="@+id/navHome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" android:textSize="12sp" android:backgroundTint="@color/cream_button" android:textColor="#000000" android:elevation="4dp"/>
+        <Button android:id="@+id/navOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order" android:textSize="12sp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:backgroundTint="@color/cream_button" android:textColor="#000000" android:elevation="4dp"/>
+        <Button android:id="@+id/navProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile" android:textSize="12sp" android:backgroundTint="@color/cream_button" android:textColor="#000000" android:elevation="4dp"/>
     </LinearLayout>
 
 </LinearLayout>

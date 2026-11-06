@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@drawable/coffee"
         android:layout_marginBottom="24dp"/>
 
     <TextView
@@ -36,5 +36,6 @@
         android:layout_height="wrap_content"
         android:text="Start now"
         android:backgroundTint="#000000"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"/>
 </LinearLayout>

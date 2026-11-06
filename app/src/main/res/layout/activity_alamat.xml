@@ -48,5 +48,6 @@
         android:layout_height="wrap_content"
         android:text="Order dan Kirim"
         android:backgroundTint="#000000"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"/>
 </LinearLayout>

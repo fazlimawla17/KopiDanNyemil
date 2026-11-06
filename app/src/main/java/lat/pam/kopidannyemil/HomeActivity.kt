@@ -14,19 +14,23 @@ class HomeActivity : AppCompatActivity() {
         val name = intent.getStringExtra("EXTRA_NAME") ?: "Pengguna"
         findViewById<TextView>(R.id.tvHaloNama).text = "Halo $name,"
 
-        val intentOrder = Intent(this, AlamatActivity::class.java)
+        val openOrder = {
+            val intentOrder = Intent(this, AlamatActivity::class.java)
+            intentOrder.putExtra("EXTRA_NAME", name)
+            startActivity(intentOrder)
+        }
 
-        findViewById<Button>(R.id.btnOrder1).setOnClickListener { startActivity(intentOrder) }
-        findViewById<Button>(R.id.btnOrder2).setOnClickListener { startActivity(intentOrder) }
-        findViewById<Button>(R.id.btnOrder3).setOnClickListener { startActivity(intentOrder) }
-        findViewById<Button>(R.id.btnOrder4).setOnClickListener { startActivity(intentOrder) }
-        findViewById<Button>(R.id.btnOrder5).setOnClickListener { startActivity(intentOrder) }
+        findViewById<Button>(R.id.btnOrder1).setOnClickListener { openOrder() }
+        findViewById<Button>(R.id.btnOrder2).setOnClickListener { openOrder() }
+        findViewById<Button>(R.id.btnOrder3).setOnClickListener { openOrder() }
+        findViewById<Button>(R.id.btnOrder4).setOnClickListener { openOrder() }
+        findViewById<Button>(R.id.btnOrder5).setOnClickListener { openOrder() }
 
         findViewById<Button>(R.id.navProfile).setOnClickListener {
             val intentProfile = Intent(this, ProfileActivity::class.java)
             intentProfile.putExtra("EXTRA_NAME", name)
             startActivity(intentProfile)
         }
-        findViewById<Button>(R.id.navOrder).setOnClickListener { startActivity(intentOrder) }
+        findViewById<Button>(R.id.navOrder).setOnClickListener { openOrder() }
     }
 }
